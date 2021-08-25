@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+    F1
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+
+    F2
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+*/
+
+
+body {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 220%;
+    text-transform: uppercase;
+    margin: 25px 0; 
+}
+
+p {
+    line-height: 25px;
+    word-spacing: 3px;
+    font-weight: initial;
+}
+
+.screen {
+    background-color: rgb(235, 222, 222);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 900px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+    overflow: hidden;
+}
+
+.content-1 {
+    background-color: var(--Bright-orange);
+}
+
+.content-2 {
+    background-color: var(--Dark-cyan);
+}
+
+.content-3 {
+    background-color: var(--Very-dark-cyan);
+}
+
+.inter-content {
+    width: 70%;
+    height: 83%;
+    position: relative;
+    top: 8%;
+    left: 13%;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 0;
+    transition: background 0.5s, color .5s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.btn-sednas {
+    color: var(--Bright-orange);
+}
+
+.btn-suvs {
+    color: var(--Dark-cyan);
+}
+
+.btn-luxury {
+    color: var(--Very-dark-cyan);
+}
