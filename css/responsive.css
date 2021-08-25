@@ -1,0 +1,38 @@
+@media (max-width: 930px) {
+    body {
+        font-size: 12px;
+    }
+
+    .box {
+        width: 750px;
+        height: 390px;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        font-size: 16px;
+    }
+
+    .screen {
+        width: 100%;
+        height: 1800px;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 70%;
+        height: 95%;
+    }
+}
+
+@media (max-width: 510px) {
+    body {
+        font-size: 12px;
+    }
+
+    .screen {
+        height: 1300px;
+    }
+}

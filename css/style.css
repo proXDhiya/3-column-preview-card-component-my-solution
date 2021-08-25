@@ -39,9 +39,14 @@ h3 {
 }
 
 p {
+    font-size: 100%;
     line-height: 25px;
     word-spacing: 3px;
     font-weight: initial;
+}
+
+a {
+    font-size: 100%;
 }
 
 .screen {
